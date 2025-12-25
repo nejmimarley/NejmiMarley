@@ -7,7 +7,7 @@ Structure:
 - `/fr/` -> pages en français (index.html, about.html, projects.html, experience.html, contact.html)
 - `/en/` -> pages en anglais (mêmes fichiers traduits)
 - `/assets/` -> styles et placeholders (remplacer par tes images et cv)
-- `CNAME` -> contient le domaine personnalisé (nejmimarley.fr)
+- `CNAME` -> contient le domaine personnalisé (nejmimarley.fr) PAS UTILE DE SUITE
 
 Comment modifier le site (méthode simple):
 1. Va sur GitHub dans le dépôt `nejmimarley/NejmiMarley`.
