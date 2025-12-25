@@ -9,134 +9,98 @@
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAV -->
 <div class="nav-wrap">
   <div class="nav">
     <div class="brand">
-      <span class="dot"></span>
-      <span>Marley Nejmi</span>
+      <span class="dot"></span> Marley Nejmi
     </div>
-
     <div class="nav-links">
-      <a class="pill pill-home" href="#home">Accueil</a>
-      <a class="pill pill-projects" href="#projects">Projets</a>
-      <a class="pill pill-exp" href="#experience">Expériences</a>
-      <a class="pill pill-about" href="#about">À propos</a>
-      <a class="pill pill-contact" href="#contact">Contact</a>
-      <a class="pill pill-lang" href="../en/">🇬🇧 EN</a>
+      <a class="pill active" href="#home">Accueil</a>
+      <a class="pill" href="#projects">Projets</a>
+      <a class="pill" href="#experience">Expériences</a>
+      <a class="pill" href="#about">À propos</a>
+      <a class="pill" href="#contact">Contact</a>
+      <a class="pill" href="../en/">🇬🇧 EN</a>
     </div>
   </div>
 </div>
 
 <main class="container">
 
-<!-- ===== HERO ===== -->
-<section class="hero section" id="home">
-  <div class="grid-hero">
-    <div class="card hero-card">
+<!-- ACCUEIL -->
+<section class="section section-home" id="home">
+  <div class="hero-grid">
+    <div>
       <h1>Étudiant CPGE ATS — futur cycle ingénieur</h1>
-      <p class="lead">
+      <p>
         Parcours orienté industrie : BUT GMP → CPGE ATS.
         Expériences en qualité / industrie 4.0 (John Deere)
         et en laboratoire (INSA Lyon — vibrations & acoustique).
       </p>
 
-      <div class="cta-row">
+      <div class="cta">
         <a class="btn primary" href="#contact">Me contacter</a>
         <a class="btn" href="../assets/cv.pdf" target="_blank">Télécharger mon CV</a>
-        <a class="btn" href="#experience">Voir mes expériences</a>
       </div>
     </div>
 
     <div class="card">
       <strong>Marley Nejmi</strong><br>
-      CPGE ATS • Préparation cycle ingénieur<br>
+      CPGE ATS — préparation cycle ingénieur<br>
       France • Permis B
-      <p class="muted" style="margin-top:10px">
-        Objectif : intégrer un cycle ingénieur et construire
-        un profil orienté industrie, amélioration continue,
-        qualité et analyse (data / essais / méthodes).
-      </p>
     </div>
   </div>
 </section>
 
-<!-- ===== PROJETS ===== -->
-<section class="section alt" id="projects">
+<!-- PROJETS -->
+<section class="section section-projects" id="projects">
   <h2>Projets</h2>
-  <p class="muted">
-    Sélection de réalisations liées à mes expériences
-    (format problème → solution → impact).
-  </p>
-
   <div class="card">
-    <strong>Qualité & Usine 4.0 — Suivi / contrôle</strong><br>
-    Mise en place d’indicateurs et de tests pour améliorer
-    le contrôle qualité dans un contexte industriel connecté.
+    <strong>Qualité & Usine 4.0</strong><br>
+    Mise en place de suivi d’indicateurs et d’outils de contrôle qualité.
   </div>
 </section>
 
-<!-- ===== EXPERIENCES ===== -->
-<section class="section" id="experience">
+<!-- EXPERIENCES -->
+<section class="section section-exp" id="experience">
   <h2>Expériences</h2>
-
   <div class="card">
-    <strong>Stage — John Deere Power Systems</strong><br>
-    Qualité interne • Industrie 4.0 • Power BI
+    <strong>Stage — John Deere Power Systems</strong>
     <ul>
-      <li>Essais et analyses de faisabilité (Smart Factory)</li>
-      <li>Suivi et reporting via Power BI</li>
-      <li>Tests de solutions de contrôle qualité</li>
+      <li>Essais et analyses (Smart Factory)</li>
+      <li>Reporting Power BI</li>
+      <li>Contrôle qualité avancé</li>
     </ul>
   </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section class="section alt" id="about">
+<!-- ABOUT -->
+<section class="section section-about" id="about">
   <h2>À propos</h2>
   <div class="card">
-    <p class="muted">
+    <p>
       Profil orienté industrie et rigueur scientifique,
       avec une base mécanique solide (GMP) et une montée
-      en compétences en sciences fondamentales (ATS).
+      en compétences en sciences fondamentales (CPGE ATS).
     </p>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="section" id="contact">
+<!-- CONTACT -->
+<section class="section section-contact" id="contact">
   <h2>Contact</h2>
   <div class="card">
-    <div class="cta-row">
-      <a class="btn" href="mailto:tonmail@example.com">Email</a>
-      <a class="btn" href="https://www.linkedin.com/in/ton-profil" target="_blank">LinkedIn</a>
-      <a class="btn" href="https://github.com/nejmimarley" target="_blank">GitHub</a>
-    </div>
+    <a class="btn" href="mailto:tonmail@example.com">Email</a>
+    <a class="btn" href="https://www.linkedin.com/in/ton-profil" target="_blank">LinkedIn</a>
+    <a class="btn" href="https://github.com/nejmimarley" target="_blank">GitHub</a>
   </div>
 </section>
 
 <footer>
-  © <span id="year"></span> Marley Nejmi — France
+  © 2025 — Marley Nejmi
 </footer>
 
 </main>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  const links = document.querySelectorAll(".pill[href^='#']");
-  const sections = [...links].map(l => document.querySelector(l.getAttribute("href")));
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const id = "#" + entry.target.id;
-      const link = document.querySelector(".pill[href='" + id + "']");
-      if (link) link.classList.toggle("active", entry.isIntersecting);
-    });
-  }, { rootMargin: "-55% 0px -40% 0px" });
-
-  sections.forEach(s => s && observer.observe(s));
-</script>
-
 </body>
 </html>
