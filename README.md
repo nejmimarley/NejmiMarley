@@ -41,3 +41,4 @@ Besoin d'aide:
   - ajouter ton contenu réel (photo, CV, projets) si tu me fournis les fichiers et textes;
   - personnaliser le style (couleurs, polices);
   - ajouter analytics ou formulaire hébergé.
+Merci
