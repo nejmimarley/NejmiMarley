@@ -59,7 +59,10 @@ a{color:inherit;text-decoration:none}
 .nav-links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 
 /* ONGLET: neutre (pas tous colorés), couleur seulement actif/hover */
+/* Onglets neutres par défaut */
 .pill{
+  --pillA: rgba(255,255,255,.14);
+  --pillB: rgba(255,255,255,.10);
   display:inline-flex;align-items:center;gap:8px;
   padding:9px 12px;
   border:1px solid rgba(255,255,255,.14);
@@ -69,16 +72,27 @@ a{color:inherit;text-decoration:none}
   font-size:14px;
   transition: transform .12s ease, background .12s ease, border-color .12s ease;
 }
+
+/* Hover: léger accent (propre, pas flashy) */
 .pill:hover{
   transform: translateY(-1px);
-  background: rgba(255,255,255,.14);
+  background: rgba(255,255,255,.13);
   border-color: rgba(255,255,255,.22);
 }
+
+/* Actif: couleur dépend de l'onglet (via --pillA / --pillB) */
 .pill.active{
-  background: linear-gradient(135deg, rgba(37,99,235,.38), rgba(124,58,237,.32));
+  background: linear-gradient(135deg, var(--pillA), var(--pillB));
   border-color: rgba(255,255,255,.26);
   color:#fff;
 }
+/* Couleurs différentes par onglet (uniquement quand active) */
+.pill-home{ --pillA: rgba(37,99,235,.45); --pillB: rgba(29,78,216,.22); }      /* bleu */
+.pill-projects{ --pillA: rgba(124,58,237,.42); --pillB: rgba(99,102,241,.18);}  /* violet */
+.pill-exp{ --pillA: rgba(6,182,212,.40); --pillB: rgba(14,165,233,.16);}       /* cyan */
+.pill-about{ --pillA: rgba(245,158,11,.38); --pillB: rgba(234,88,12,.14);}     /* orange */
+.pill-contact{ --pillA: rgba(16,185,129,.36); --pillB: rgba(5,150,105,.14);}   /* vert */
+.pill-lang{ --pillA: rgba(255,255,255,.22); --pillB: rgba(255,255,255,.12);}   /* neutre */
 
 /* HERO / SECTIONS */
 .hero{padding:18px 0 10px}
