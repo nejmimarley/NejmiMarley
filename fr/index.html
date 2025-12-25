@@ -3,150 +3,209 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nejmi Marley — Portfolio (FR)</title>
+  <title>Marley Nejmi — Portfolio (FR)</title>
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
+
   <div class="nav-wrap">
     <div class="nav">
       <div class="brand">
         <span class="dot"></span>
-        <span>Nejmi Marley</span>
+        <a href="#home">Marley Nejmi</a>
       </div>
 
       <div class="nav-links">
         <a class="pill" href="#home">Accueil</a>
         <a class="pill" href="#projects">Projets</a>
         <a class="pill" href="#experience">Expériences</a>
-        <a class="pill" href="#about">About me</a>
+        <a class="pill" href="#about">À propos</a>
         <a class="pill" href="#contact">Contact</a>
-        <a class="pill" href="../en/">EN</a>
+        <a class="pill" href="../en/">🇬🇧 EN</a>
       </div>
     </div>
   </div>
 
   <main class="container">
+    <!-- HERO -->
     <section class="hero section" id="home">
       <div class="grid-hero">
         <div class="card">
-          <h1>Portfolio — Nejmi Marley</h1>
+          <h1>Étudiant CPGE ATS — futur cycle ingénieur</h1>
           <p class="lead">
-            Étudiant en ingénierie basé en France. Je construis des projets concrets et présentables : web, code, automatisation.
+            Parcours orienté industrie : BUT GMP → CPGE ATS. Expériences en qualité/industrie 4.0 (John Deere)
+            et en laboratoire (INSA Lyon — vibrations & acoustique).
           </p>
+
           <div class="cta-row">
-            <a class="btn primary" href="#projects">Voir mes projets</a>
-            <a class="btn" href="#contact">Me contacter</a>
-            <!-- <a class="btn" href="../assets/CV-NejmiMarley.pdf" target="_blank" rel="noopener">Télécharger le CV</a> -->
+            <a class="btn primary" href="#contact">Me contacter</a>
+            <a class="btn" href="../assets/cv.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+            <a class="btn" href="#experience">Voir mes expériences</a>
           </div>
-          <p class="muted" style="margin-top:14px">
-            Objectif : candidatures écoles d’ingénieurs & entreprises (stage / alternance / opportunités).
-          </p>
+
+          <div class="badges">
+            <span class="badge">🛠️ GMP / Mécanique</span>
+            <span class="badge">📊 Power BI</span>
+            <span class="badge">📐 CAO : Creo / TopSolid</span>
+            <span class="badge">🧪 Matlab (lab)</span>
+            <span class="badge">🏭 Qualité / Usine 4.0</span>
+          </div>
         </div>
 
         <div class="card">
-          <p class="item-title">Infos rapides</p>
-          <p class="item-meta">Étudiant • Ingénierie / Développement</p>
+          <div style="display:flex;gap:14px;align-items:center">
+            <img class="avatar" src="../assets/profile-placeholder.png" alt="Photo Marley Nejmi">
+            <div>
+              <div class="item-title">Marley Nejmi</div>
+              <div class="item-meta">CPGE ATS • Préparation cycle ingénieur</div>
+              <div class="muted">France • Permis B</div>
+            </div>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <div class="item-title">Objectif</div>
           <p class="item-desc">
-            3–4 lignes : ton domaine, tes forces, ce que tu recherches (simple et concret).
+            Intégrer un cycle ingénieur et continuer à construire un profil orienté industrie, amélioration continue,
+            qualité et analyse (data / essais / méthodes).
           </p>
-          <p class="muted" style="margin:12px 0 0"><b>Localisation :</b> France</p>
-          <p class="muted" style="margin:6px 0 0"><b>Stack :</b> Python • HTML/CSS • Git (à adapter)</p>
         </div>
       </div>
     </section>
 
+    <!-- PROJETS -->
     <section class="section" id="projects">
       <h2>Projets</h2>
-      <p class="muted">Sélection de projets (objectif, stack, résultat, liens).</p>
+      <p class="muted">Sélection de réalisations liées à mes expériences (format “problème → solution → impact”).</p>
 
       <div class="grid">
         <div class="card">
-          <p class="item-title">Projet 1 — Nom</p>
-          <p class="item-meta">Stack : … • Année : …</p>
-          <p class="item-desc">Problème → solution → résultat (1–2 phrases).</p>
-          <div class="cta-row" style="margin-top:12px">
-            <a class="btn" href="#" target="_blank" rel="noopener">Repo</a>
-            <a class="btn" href="#" target="_blank" rel="noopener">Démo</a>
-          </div>
+          <div class="item-title">Qualité & Usine 4.0 — Suivi / contrôle</div>
+          <div class="item-meta">Power BI • Qualité • Industrie</div>
+          <p class="item-desc">
+            Mise en place d’un suivi d’indicateurs et de tests pour améliorer le contrôle qualité
+            dans un contexte “Smart Connected Factory”.
+          </p>
         </div>
 
         <div class="card">
-          <p class="item-title">Projet 2 — Nom</p>
-          <p class="item-meta">Stack : … • Année : …</p>
-          <p class="item-desc">Problème → solution → résultat.</p>
-          <div class="cta-row" style="margin-top:12px">
-            <a class="btn" href="#" target="_blank" rel="noopener">Repo</a>
-          </div>
+          <div class="item-title">Traitement de signal — bruit moteur</div>
+          <div class="item-meta">Matlab • Vibration / acoustique</div>
+          <p class="item-desc">
+            Contribution à un outil de traitement/filtrage pour analyser le bruit d’un moteur automobile.
+            Synthèse & rapports de travaux.
+          </p>
         </div>
 
         <div class="card">
-          <p class="item-title">Projet 3 — Nom</p>
-          <p class="item-meta">Stack : … • Année : …</p>
-          <p class="item-desc">Problème → solution → résultat.</p>
-          <div class="cta-row" style="margin-top:12px">
-            <a class="btn" href="#" target="_blank" rel="noopener">Repo</a>
-          </div>
+          <div class="item-title">Pédagogie — cours de maths</div>
+          <div class="item-meta">Communication • Structure • Clarté</div>
+          <p class="item-desc">
+            Explication de concepts et accompagnement (niveau lycée) : méthode, rigueur,
+            et capacité à transmettre.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- EXPERIENCES (TIMELINE) -->
     <section class="section" id="experience">
       <h2>Expériences</h2>
-      <p class="muted">Stages, projets scolaires, association, freelance (si applicable).</p>
+      <div class="timeline">
 
-      <div class="grid">
-        <div class="card">
-          <p class="item-title">Expérience 1 — Rôle</p>
-          <p class="item-meta">Organisation • Dates</p>
-          <p class="item-desc">Ce que tu as fait + impact (2–3 points simples).</p>
+        <div class="tl-item">
+          <div class="tl-date">17 mars → 27 juin 2025</div>
+          <div class="tl-card">
+            <div class="tl-title">Stage — John Deere Power Systems (Qualité interne)</div>
+            <div class="tl-sub">Industrie • Qualité • Usine 4.0 • Power BI</div>
+            <ul class="tl-ul">
+              <li>Réalisation d’essais / analyses de faisabilité sur projets “Smart Connected Factory”.</li>
+              <li>Utilisation de Power BI pour le suivi / reporting.</li>
+              <li>Paramétrage et tests de solutions de contrôle qualité (qualité augmentée).</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <p class="item-title">Expérience 2 — Rôle</p>
-          <p class="item-meta">Organisation • Dates</p>
-          <p class="item-desc">Ce que tu as fait + impact.</p>
+
+        <div class="tl-item">
+          <div class="tl-date">15 avril → 5 juillet 2024</div>
+          <div class="tl-card">
+            <div class="tl-title">Stage — INSA Lyon (Laboratoire vibrations & acoustique)</div>
+            <div class="tl-sub">Signal • Matlab • Analyse • Rédaction</div>
+            <ul class="tl-ul">
+              <li>Contribution à un outil de traitement de signal pour analyser le bruit moteur.</li>
+              <li>Exploitation Matlab, analyse et synthèse des résultats.</li>
+              <li>Rédaction de rapports et présentation des conclusions.</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <p class="item-title">Expérience 3 — Projet marquant</p>
-          <p class="item-meta">Contexte • Dates</p>
-          <p class="item-desc">Problème → apprentissages → résultat.</p>
+
+        <div class="tl-item">
+          <div class="tl-date">2023 → 2026</div>
+          <div class="tl-card">
+            <div class="tl-title">Animateur événementiel — AAEVENT</div>
+            <div class="tl-sub">Relation client • Animation • Organisation</div>
+            <ul class="tl-ul">
+              <li>Accueil des clients, animation et coordination sur événements.</li>
+              <li>Gestion de missions (team building, logistique, organisation).</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="tl-item">
+          <div class="tl-date">2022 → 2026</div>
+          <div class="tl-card">
+            <div class="tl-title">Cours de maths (niveau lycée)</div>
+            <div class="tl-sub">Pédagogie • Méthode • Clarté</div>
+            <ul class="tl-ul">
+              <li>Structuration des explications et méthode de résolution.</li>
+              <li>Accompagnement et progression des élèves.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section" id="about">
-      <h2>About me</h2>
+      <h2>À propos</h2>
       <div class="card">
         <p class="muted">
-          8–10 lignes max. Parcours, centres d’intérêt, façon de travailler, ce que tu recherches.
+          Mon profil combine une base mécanique/industrielle (BUT GMP) et une montée en puissance
+          en sciences fondamentales (CPGE ATS). J’aime les environnements où il faut analyser, tester,
+          structurer, puis améliorer : qualité, méthodes, industrialisation, data de production, essais.
+          Je cherche une trajectoire ingénieur orientée impact terrain et rigueur.
         </p>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="section" id="contact">
       <h2>Contact</h2>
       <div class="card">
-        <p class="muted">Tu peux me contacter par email ou via mes réseaux.</p>
+        <p class="muted">Tu peux me contacter ici (remplace par tes vrais liens) :</p>
         <div class="cta-row" style="margin-top:12px">
-          <a class="btn" href="mailto:tonmail@example.com">📩 tonmail@example.com</a>
-          <a class="btn" href="https://github.com/nejmimarley" target="_blank" rel="noopener">🐙 GitHub</a>
+          <a class="btn" href="mailto:tonmail@example.com">📩 Email</a>
+          <a class="btn" href="tel:+33XXXXXXXXX">📞 Téléphone</a>
           <a class="btn" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a class="btn" href="https://github.com/nejmimarley" target="_blank" rel="noopener">🐙 GitHub</a>
         </div>
       </div>
     </section>
 
     <footer>
-      <div>© <span id="y"></span> Nejmi Marley</div>
+      <div>© <span id="y"></span> Marley Nejmi • France</div>
       <div class="foot-row">
+        <a class="foot-link" href="../assets/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
         <a class="foot-link" href="mailto:tonmail@example.com">Email</a>
-        <a class="foot-link" href="https://github.com/nejmimarley" target="_blank" rel="noopener">GitHub</a>
         <a class="foot-link" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="foot-link" href="https://github.com/nejmimarley" target="_blank" rel="noopener">GitHub</a>
       </div>
     </footer>
   </main>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
-    // Surbrillance du lien actif au scroll (simple et propre)
     const links = [...document.querySelectorAll(".pill[href^='#']")];
     const sections = links.map(a => document.querySelector(a.getAttribute("href")));
     const obs = new IntersectionObserver((entries) => {
