@@ -3,114 +3,160 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nejmi Marley — Portfolio</title>
-  <meta name="description" content="Portfolio de Nejmi Marley — étudiant / ingénieur en devenir. Présentation, projets et contact." />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <title>Nejmi Marley — Portfolio (FR)</title>
+  <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="/fr/">Nejmi Marley</a>
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/fr/about.html">À propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="/fr/projects.html">Projets</a></li>
-          <li class="nav-item"><a class="nav-link" href="/fr/experience.html">Expériences</a></li>
-          <li class="nav-item"><a class="nav-link" href="/fr/contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="/en/">EN</a></li>
-        </ul>
+  <div class="nav-wrap">
+    <div class="nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>Nejmi Marley</span>
+      </div>
+
+      <div class="nav-links">
+        <a class="pill" href="#home">Accueil</a>
+        <a class="pill" href="#projects">Projets</a>
+        <a class="pill" href="#experience">Expériences</a>
+        <a class="pill" href="#about">About me</a>
+        <a class="pill" href="#contact">Contact</a>
+        <a class="pill" href="../en/">EN</a>
       </div>
     </div>
-  </nav>
+  </div>
 
-  <header class="hero container py-5 text-start">
-    <div class="row align-items-center">
-      <div class="col-md-8">
-        <h1 class="display-5 fw-bold">Bonjour — je suis Nejmi Marley</h1>
-        <p class="lead text-muted">Étudiant / futur ingénieur. J'aime construire des applications web et résoudre des problèmes avec du code.</p>
-        <p>
-          <a href="/fr/projects.html" class="btn btn-primary me-2">Mes projets</a>
-          <a href="/fr/about.html" class="btn btn-outline-secondary">À propos</a>
-        </p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="/assets/profile-placeholder.png" alt="Photo" class="rounded-circle img-fluid" style="max-width:220px;">
-      </div>
-    </div>
-  </header>
+  <main class="container">
+    <section class="hero section" id="home">
+      <div class="grid-hero">
+        <div class="card">
+          <h1>Portfolio — Nejmi Marley</h1>
+          <p class="lead">
+            Étudiant en ingénierie basé en France. Je construis des projets concrets et présentables : web, code, automatisation.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">Voir mes projets</a>
+            <a class="btn" href="#contact">Me contacter</a>
+            <!-- <a class="btn" href="../assets/CV-NejmiMarley.pdf" target="_blank" rel="noopener">Télécharger le CV</a> -->
+          </div>
+          <p class="muted" style="margin-top:14px">
+            Objectif : candidatures écoles d’ingénieurs & entreprises (stage / alternance / opportunités).
+          </p>
+        </div>
 
-  <main class="container my-5">
-    <section id="about" class="mb-5">
-      <h2>À propos</h2>
-      <p>Courte présentation — remplace ce texte par ta bio, ta formation, et tes compétences.</p>
-      <div>
-        <strong>Compétences :</strong>
-        <span class="badge">Python</span>
-        <span class="badge">JavaScript</span>
-        <span class="badge">React</span>
-        <span class="badge">Machine Learning</span>
+        <div class="card">
+          <p class="item-title">Infos rapides</p>
+          <p class="item-meta">Étudiant • Ingénierie / Développement</p>
+          <p class="item-desc">
+            3–4 lignes : ton domaine, tes forces, ce que tu recherches (simple et concret).
+          </p>
+          <p class="muted" style="margin:12px 0 0"><b>Localisation :</b> France</p>
+          <p class="muted" style="margin:6px 0 0"><b>Stack :</b> Python • HTML/CSS • Git (à adapter)</p>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="mb-5">
-      <h2>Projets sélectionnés</h2>
-      <div class="row g-4 mt-1">
-        <div class="col-md-6">
-          <div class="card project-card">
-            <img src="/assets/project-placeholder.png" class="card-img-top" alt="Projet">
-            <div class="card-body">
-              <h5 class="card-title">Titre du projet</h5>
-              <p class="card-text text-muted">Courte description — remplace par la description réelle du projet.</p>
-              <a href="#" class="card-link">GitHub</a>
-              <a href="#" class="card-link">Démo</a>
-            </div>
+    <section class="section" id="projects">
+      <h2>Projets</h2>
+      <p class="muted">Sélection de projets (objectif, stack, résultat, liens).</p>
+
+      <div class="grid">
+        <div class="card">
+          <p class="item-title">Projet 1 — Nom</p>
+          <p class="item-meta">Stack : … • Année : …</p>
+          <p class="item-desc">Problème → solution → résultat (1–2 phrases).</p>
+          <div class="cta-row" style="margin-top:12px">
+            <a class="btn" href="#" target="_blank" rel="noopener">Repo</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Démo</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="item-title">Projet 2 — Nom</p>
+          <p class="item-meta">Stack : … • Année : …</p>
+          <p class="item-desc">Problème → solution → résultat.</p>
+          <div class="cta-row" style="margin-top:12px">
+            <a class="btn" href="#" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="item-title">Projet 3 — Nom</p>
+          <p class="item-meta">Stack : … • Année : …</p>
+          <p class="item-desc">Problème → solution → résultat.</p>
+          <div class="cta-row" style="margin-top:12px">
+            <a class="btn" href="#" target="_blank" rel="noopener">Repo</a>
           </div>
         </div>
       </div>
-      <p class="mt-3"><a href="/fr/projects.html">Voir tous les projets →</a></p>
     </section>
 
-    <section id="cv" class="mb-5">
-      <h2>CV</h2>
-      <p>Téléchargez mon CV : <a href="/assets/cv.pdf" target="_blank">CV_NejmiMarley.pdf</a> (placeholder)</p>
+    <section class="section" id="experience">
+      <h2>Expériences</h2>
+      <p class="muted">Stages, projets scolaires, association, freelance (si applicable).</p>
+
+      <div class="grid">
+        <div class="card">
+          <p class="item-title">Expérience 1 — Rôle</p>
+          <p class="item-meta">Organisation • Dates</p>
+          <p class="item-desc">Ce que tu as fait + impact (2–3 points simples).</p>
+        </div>
+        <div class="card">
+          <p class="item-title">Expérience 2 — Rôle</p>
+          <p class="item-meta">Organisation • Dates</p>
+          <p class="item-desc">Ce que tu as fait + impact.</p>
+        </div>
+        <div class="card">
+          <p class="item-title">Expérience 3 — Projet marquant</p>
+          <p class="item-meta">Contexte • Dates</p>
+          <p class="item-desc">Problème → apprentissages → résultat.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="mb-5">
+    <section class="section" id="about">
+      <h2>About me</h2>
+      <div class="card">
+        <p class="muted">
+          8–10 lignes max. Parcours, centres d’intérêt, façon de travailler, ce que tu recherches.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
       <h2>Contact</h2>
-      <p>Intéressé(e) ? Contactez-moi :</p>
-      <form action="https://formspree.io/f/XXXXX" method="POST" class="row g-3" target="_blank">
-        <div class="col-md-6">
-          <label class="form-label">Nom</label>
-          <input class="form-control" name="name" required>
+      <div class="card">
+        <p class="muted">Tu peux me contacter par email ou via mes réseaux.</p>
+        <div class="cta-row" style="margin-top:12px">
+          <a class="btn" href="mailto:tonmail@example.com">📩 tonmail@example.com</a>
+          <a class="btn" href="https://github.com/nejmimarley" target="_blank" rel="noopener">🐙 GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">💼 LinkedIn</a>
         </div>
-        <div class="col-md-6">
-          <label class="form-label">Email</label>
-          <input type="email" class="form-control" name="_replyto" required>
-        </div>
-        <div class="col-12">
-          <label class="form-label">Message</label>
-          <textarea class="form-control" name="message" rows="4" required></textarea>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary">Envoyer</button>
-          <small class="text-muted ms-3">Ou envoie un email : <a href="mailto:ton.email@example.com">ton.email@example.com</a></small>
-        </div>
-      </form>
+      </div>
     </section>
+
+    <footer>
+      <div>© <span id="y"></span> Nejmi Marley</div>
+      <div class="foot-row">
+        <a class="foot-link" href="mailto:tonmail@example.com">Email</a>
+        <a class="foot-link" href="https://github.com/nejmimarley" target="_blank" rel="noopener">GitHub</a>
+        <a class="foot-link" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </footer>
   </main>
 
-  <footer class="bg-white border-top py-4">
-    <div class="container d-flex justify-content-between">
-      <div class="text-muted small">© <span id="year"></span> Nejmi Marley</div>
-      <div>
-        <a href="https://github.com/nejmimarley" class="me-3">GitHub</a>
-        <a href="#" class="me-3">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    // Surbrillance du lien actif au scroll (simple et propre)
+    const links = [...document.querySelectorAll(".pill[href^='#']")];
+    const sections = links.map(a => document.querySelector(a.getAttribute("href")));
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        const id = "#" + e.target.id;
+        const link = links.find(l => l.getAttribute("href") === id);
+        if(link) link.classList.toggle("active", e.isIntersecting);
+      });
+    }, { rootMargin: "-55% 0px -40% 0px", threshold: 0.01 });
+    sections.forEach(s => s && obs.observe(s));
+  </script>
 </body>
 </html>
